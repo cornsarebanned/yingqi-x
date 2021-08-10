@@ -27,13 +27,13 @@ const About = () => {
               <div className="about-content">
                 <h1 id="about-font-h1">ABOUT</h1>
                 <span id="about-font-h4-v1">
-                  I'm an aspiring UX Designer based in Singapore.
+                  I&apos;m an aspiring UX Designer based in Singapore.
                 </span>
                 <br />
                 <span className="about-font-h4-v2">
                   I enjoy crafting solutions to create simplistic yet responsive
                   Web Applications for the everyday consumers while keeping
-                  vital business goals in mind. When I'm not working on my
+                  vital business goals in mind. When I&apos;m not working on my
                   craft, you will find me adulting, picking up basic Spanish
                   expressions, reading or engaging in a pickup basketball game.
                 </span>
