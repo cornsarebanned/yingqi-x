@@ -106,7 +106,7 @@ nav{
 
 /* 3.3 Navbar Links*/
 a{
-  color: #343346;
+  color: var(--global-color-secondary-bluegrey);
   text-decoration: none;
 }
 
@@ -168,7 +168,7 @@ a{
   background-color: var(--global-color-primary);
   /* border-bottom: 1px solid #ddd; */
   list-style: none;
-  border: 2px solid #343346;
+  border: 2px solid var(--global-color-secondary-bluegrey);
 }
 
 #about,
@@ -191,7 +191,6 @@ a{
 }
 
 }
-
 
 /* ================== */
 /* Footer*/
@@ -319,7 +318,7 @@ footer{
   }
 
   #page-404-ohsnap{
-    font-size: 3.2vh;
+    font-size: 3.2vh; 
   }
   
   #page-404-hitasnag{
@@ -405,7 +404,7 @@ footer{
 
 /* Child to .about-content-container */
 .about-image{
-  /* border: 2px solid #343346; */
+  /* border: 2px solid var(--global-color-secondary-bluegrey); */
   filter: lightgrey; /* IE6-9 */
   -webkit-filter: grayscale(100%); /* Google Chrome, Safari 6+ & Opera 15+ */
   filter: grayscale(100%); /* Microsoft Edge and Firefox 35+ */
@@ -421,14 +420,14 @@ footer{
 
 /* Child to .about-content-container */
 .about-content{
-  /* border: 1px solid #343346;  */
+  /* border: 1px solid var(--global-color-secondary-bluegrey);  */
   background-color: #d2c2b0;
   width: 50%;
   height: auto;
   padding: 1.5em 4em 1.7em;
   display: flex;
   flex-direction: column;
-  color: #343346;
+  color: var(--global-color-secondary-bluegrey);
   box-shadow: 0 5px 25px 0 rgba(0,0,0,.25);    
 }
 
@@ -511,7 +510,7 @@ footer{
     width: 100%;
     height: auto;
     padding: 0em 3.3em 1.7em;
-    color: #343346;
+    color: var(--global-color-secondary-bluegrey);
     box-shadow: 0 0px 0px 0 rgba(0,0,0,0);      
   }
 }
@@ -717,100 +716,77 @@ footer{
 }
 
 /* ================== */
-/* Cards - Projects*/
+/* Grid - Projects*/
 /* ================== */
 
+.projects-grid{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 47rem;
+   /* border: 2px solid blue; */
+}
+
+/* ================== */
+/* Cards - Projects*/
+/* ================== */
+ 
 .card{
-  color:white;
-  background-image:url(/peace-sign.png);
   background-size: cover;
   height: auto;
-  padding: 10rem 0 0;
+  padding: 0 0 2rem;
   max-width: 50ch;
   border-radius: 0.5rem; 
   overflow: hidden;
   transition: transform 650ms ease;
   box-shadow: 0 5px 25px 0 rgba(0,0,0,.25);
-  /* border: 1px solid red; */
-}
+  /* border: 2px solid red; */
+} 
 
 .card:hover{
   transform: scale(1.05);
 }
 
 .card-content{
-  --padding: 1.5rem;
-  padding: var(--padding);
-  background: linear-gradient( 
-    hsl(0 0% 0% / 0),
-    hsl(20 0% 0% / 0.3) 20%,
-    hsl(0 0% 0% / 1)
-    );
-  transform: translateY(58%);
-  transition: transform 500ms ease;
-}
-
-.card-content > *:not(.card-title){
-  opacity: 0;
-  transition: opacity 500ms linear;
-}
-
-.card:hover .card-content{
-  transform: translateY(0);
-}
-
-.card:hover .card-content > *:not(.card-title){
-  opacity: 1;
-  transform: translateY(0);
+  padding: 1.5rem 0 0;
+  max-width: 85%;
+  max-height: 100%;
+  margin: 0 auto;
+  letter-spacing: 0.1px;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Inter', sans-serif;
+  /* font-family: 'Aleo', serif; */
+  /* font-family: 'Crimson Pro', serif; */
 }
 
 .card-title{
-  position: relative;
-  width: max-content;
-  /* outline: 1px solid red; */
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 1.4rem;
 }
 
-.card-title::after{
-  content: "";
-  position: absolute;
-  height: 3px;
-  width: calc(100% + var(--padding));
-  background: #C0EC83;
-  left: calc(var(--padding)*-1);
-  bottom: -3px;
-  transform: scaleX(0);
-  transition: transform 500ms ease;
-  transform-origin: left;
-}
-
-.title-nobold{
-  font-weight: lighter;
-}
-
-.card:hover .card-title::after{
-  transform: scaleX(1);
-}
-
-.card-body{
-  color: rgb(255 255 255/ .9);
+.card-type{
+  font-size: 0.92rem;
 }
 
 .card-btn{
-  color: #343346;
+  color: var(--global-color-primary);
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
-  background-color: orange;
+  background-color: var(--global-color-secondary-bluegrey);
   padding: 0.5em 1.25em;
   border-radius: 0.25em;
-  transition: transform 600ms ease;
+  transition: transform 600ms ease; 
 }
 
 .card-btn:hover,
 .card-btn:focus{
-  background-color: #343346;
-  color: pink;
-}
+  background-color: #9D9CAD;
+  color: black;
+} */
+
+
 
 
 /* ================== */
