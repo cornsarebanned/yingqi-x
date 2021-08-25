@@ -98,7 +98,6 @@ export default function ProjectDetails({eCommerceWebApplication}){
           color: #343346;
           text-transform: uppercase;
         }
-        
 
       `}
       </style>
