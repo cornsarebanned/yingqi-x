@@ -53,7 +53,7 @@ export default function ProjectDetails({projects}){
           alt={type}
         />
           <h2>{ title }</h2>
-          <Link href={url} passHref target = "_blank"><a className="slug-url">{url}</a></Link>
+          <div><Link href={url}><a className="slug-url">{url}</a></Link></div>
       </div>
 
       <div className="method">
@@ -81,8 +81,6 @@ export default function ProjectDetails({projects}){
         .slug-url{
           text-decoration: underline;
           color: #767676;
-          font-family: 'Lora', serif;
-          text-transform: uppercase;
         }
 
         .slug-url:hover{
