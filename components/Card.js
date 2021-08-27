@@ -20,7 +20,7 @@ export default function Card({project}) {
                     <div className="card-title">{title}</div>
                     <br />
                     <em className="card-type">{type}</em>
-                    <h5>Completed On : { date }</h5>
+                    <h5>Updated On : { date }</h5>
                 </div>
                 <div className="actions">
                     <Link href={'/projects/' + slug}><a className="card-btn">Learn More</a></Link>

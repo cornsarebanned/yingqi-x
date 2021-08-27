@@ -48,7 +48,7 @@ const About = () => {
                 </span> */}
                 {/* <br /> */}
                 <span className="about-font-h4-v2">
-                  This website is built with tonnes of love and googling, please kindly continue 
+                  This website is built with tonnes of love, please kindly continue 
                   to <em>watch this space for further updates</em>.
                 </span>
                 <br />
