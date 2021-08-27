@@ -53,7 +53,7 @@ export default function ProjectDetails({projects}){
           alt={type}
         />
           <h2>{ title }</h2>
-          <Link href="{url}" passHref target = "_blank"><a className="slug-url">{url}</a></Link>
+          <Link href={url} passHref target = "_blank"><a className="slug-url">{url}</a></Link>
       </div>
 
       <div className="method">

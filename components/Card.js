@@ -17,7 +17,7 @@ export default function Card({project}) {
             </div>
             <div className="card-content">
                 <div className="info">
-                    <Link href="{url}" passHref target = "_blank"><a className="card-title">{title}</a></Link>
+                    <div className="card-title">{title}</div>
                     <br />
                     <em className="card-type">{type}</em>
                     <h5>Completed On : { date }</h5>
