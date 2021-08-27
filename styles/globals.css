@@ -714,7 +714,6 @@ footer{
   justify-content: flex-start;
   align-items: flex-start;
   margin-bottom: 2rem;
-  /* border: 1px solid pink; */
 }
 
 /* ================== */
@@ -726,7 +725,6 @@ footer{
    justify-content: space-around;
    align-items: center;
    height: 47rem;
-   /* border: 2px solid blue; */
 }
 
 /* ================== */
@@ -742,7 +740,6 @@ footer{
   overflow: hidden;
   transition: transform 650ms ease;
   box-shadow: 0 5px 25px 0 rgba(0,0,0,.25);
-  /* border: 2px solid red; */
 } 
 
 .card:hover{
@@ -755,10 +752,7 @@ footer{
   max-height: 100%;
   margin: 0 auto;
   letter-spacing: 0.1px;
-  /* font-family: 'Open Sans', sans-serif; */
   font-family: 'Inter', sans-serif;
-  /* font-family: 'Aleo', serif; */
-  /* font-family: 'Crimson Pro', serif; */
 }
 
 .card-title{
@@ -786,7 +780,7 @@ footer{
 .card-btn:focus{
   background-color: #9D9CAD;
   color: black;
-} */
+}
 
 
 /* ================== */
@@ -811,6 +805,5 @@ footer{
 }
 
 .home-title-job{
-  font-size: 18rem; 
-  /* border: 2px solid black; */
+  font-size: 18rem;
 }

@@ -1,10 +1,10 @@
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 
-export default function Card({ webapp }){
-    const {title, type, slug, date, url, thumbnail} = webapp.fields
+export default function Card({project}) {
+    const {title, type, slug, date, url, thumbnail} = project.fields
 
-    return(
+     return(
         <div className="card">
             <div className="thumbnail">
                 <Image src={'https:' + thumbnail.fields.file.url}
@@ -17,7 +17,7 @@ export default function Card({ webapp }){
             </div>
             <div className="card-content">
                 <div className="info">
-                    <Link href={url} passHref target = "_blank"><a className="card-title">{title}</a></Link>
+                    <Link href="{url}" passHref target = "_blank"><a className="card-title">{title}</a></Link>
                     <br />
                     <em className="card-type">{type}</em>
                     <h5>Completed On : { date }</h5>
@@ -29,3 +29,4 @@ export default function Card({ webapp }){
         </div>
     )
 }
+

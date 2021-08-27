@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import Link from 'next/link';
 
-
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_KEY,
@@ -11,7 +10,7 @@ const client = createClient({
 
 export const getStaticPaths = async () => {
   const res = await client.getEntries({ 
-    content_type: 'eCommerceWebApplication' 
+    content_type: "projects"
   })
   const paths = res.items.map(item => {
     return {
@@ -27,20 +26,19 @@ export const getStaticPaths = async () => {
 
 export async function getStaticProps({params}){
   const {items} = await client.getEntries({
-    content_type: 'eCommerceWebApplication',
+    content_type: 'projects',
     'fields.slug' : params.slug
   })
 
   return{
-    props: {eCommerceWebApplication:items[0]}
+    props: {projects:items[0]}
   }
 
 }
 
-
-export default function ProjectDetails({eCommerceWebApplication}){
-  console.log(eCommerceWebApplication);
-  const { featuredImage, title, date, url, description, type} = eCommerceWebApplication.fields
+export default function ProjectDetails({projects}){
+  console.log(projects);
+  const { featuredImage, title, url, description, type} = projects.fields
 
   return (
     <div className="slug-body">
@@ -55,7 +53,7 @@ export default function ProjectDetails({eCommerceWebApplication}){
           alt={type}
         />
           <h2>{ title }</h2>
-          <Link href={url} passHref target = "_blank"><a className="slug-url">{url}</a></Link>
+          <Link href="{url}" passHref target = "_blank"><a className="slug-url">{url}</a></Link>
       </div>
 
       <div className="method">
@@ -106,4 +104,3 @@ export default function ProjectDetails({eCommerceWebApplication}){
     </div>
   )
 }
-
