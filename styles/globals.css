@@ -735,7 +735,7 @@ footer{
 
 @media only screen and (max-width: 963px){
   .projects-grid{
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
