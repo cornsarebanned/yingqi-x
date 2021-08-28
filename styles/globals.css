@@ -707,14 +707,14 @@ footer{
 /* Projects*/
 /* ================== */
 
-.projects-wrapper{
+/* .projects-wrapper{
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(auto-fill, 40rem);
   justify-content: flex-start;
   align-items: flex-start;
   margin-bottom: 2rem;
-}
+} */
 
 /* ================== */
 /* Grid - Projects*/
@@ -726,7 +726,28 @@ footer{
    align-items: center;
    height: 47rem;
    flex-wrap: wrap;
+   /* border: 2px solid black; */
 }
+
+/* ================== */
+/* Grid-Projects Media Query*/
+/* ================== */
+
+@media only screen and (max-width: 963px){
+  .projects-grid{
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 870px){
+  .projects-grid{
+    justify-content: center;
+    align-items: space-around;
+    height: 82rem;
+    margin-top: 1rem;
+  }
+}
+
 
 /* ================== */
 /* Cards - Projects*/
