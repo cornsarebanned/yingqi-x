@@ -19,7 +19,7 @@ export default function Card({project}) {
                 <div className="info">
                     <div className="card-title">{title}</div>
                     <br />
-                    <em className="card-type">{type}</em>
+                    <div className="card-type">Category: {type}</div>
                     <h5>Updated On : { date }</h5>
                 </div>
                 <div className="actions">
